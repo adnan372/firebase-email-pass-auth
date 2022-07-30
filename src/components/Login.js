@@ -2,8 +2,6 @@ import React , {useState }  from 'react'
 import { useNavigate } from 'react-router';
 import {Link} from 'react-router-dom'
 import { getAuth,signInWithEmailAndPassword } from "firebase/auth";
-import { firebaseApp } from '../firebase';
-import { Navigate } from 'react-router-dom';
 
 const SignUp = () => {
     const [email,setEmail] = useState("");
@@ -13,7 +11,6 @@ const SignUp = () => {
 
     const singup = () => {
     const auth = getAuth();
-        // e.preventDefault();
         signInWithEmailAndPassword(
             auth,
             email,
@@ -30,12 +27,9 @@ const SignUp = () => {
         })
     }
 
-
-    return (
-    
+    return (  
     <div>
         <center className="mt-52">
-
         <h1 className='text-center text-4xl font-bold mb-8 text-2xl'>LogIn</h1>
         <div className="container flex flex-col justify-center items-center">
             <input onChange={(e) => {setEmail(e.target.value)}} className='border my-1 rounded-md p-1'  type="text" placeholder='Enter your email' />

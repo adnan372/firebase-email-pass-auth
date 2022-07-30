@@ -1,11 +1,10 @@
+//hehe
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore/lite';
 // import firebase from 'firebase/compat/app';
 import { getAuth } from "firebase/auth";
 // import 'firebase/compat/firestore';
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
  export const firebaseApp = initializeApp({

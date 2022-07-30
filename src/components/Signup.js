@@ -30,12 +30,9 @@ const SignUp = () => {
         })
     }
 
-
     return (
-    
     <div>
         <center className="mt-52">
-
         <h1 className='text-center mb-8 text-4xl font-bold'>Sign Up</h1>
         <div className="container flex flex-col justify-center items-center">
             <input onChange={(e) => {setEmail(e.target.value)}} className='border my-1 rounded-md p-1'  type="text" placeholder='Enter your email' />
